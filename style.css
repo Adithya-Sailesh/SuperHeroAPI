@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    background: rgb(215,206,97);
+    background: linear-gradient(90deg, rgba(215,206,97,1) 0%, rgba(212,169,49,1) 48%, rgba(171,159,22,1) 87%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes drop{
+    from{transform: translateY(550px);}
+    to{transform: translateY(0px);}
+}
+@keyframes textanimation{
+    from{transform: scale(0.5);}
+    to{transform: scale(1.2);}
+}
+.container{
+    animation-name: drop;
+    animation-duration: 2s;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0.89;
+    height: 70vh;
+    min-width: 350px;
+    width: 50vw;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    animation-name: textanimation;
+    animation-duration: 1.5s;
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition-duration: 2s;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bungee Spice','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+}
+.switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 4px;
+}
+#reload{
+    font-size: 25px;
+    height: 2em;
+    width: 10em;
+    background: rgb(215,206,97);
+    background: linear-gradient(90deg, rgba(215,206,97,1) 0%, rgba(212,169,49,1) 48%, rgba(171,159,22,1) 87%);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#reload:hover{
+
+    border: 3px solid rgb(51, 20, 224);
+
+}
+.searchbar{
+    padding-top: 15px;
+   margin-left: 10px;
+}
+.searchbtn{
+    font-size: 15px;
+    height: 2em;
+    width: 9em;
+    background: rgb(215,206,97);
+    background: linear-gradient(90deg, rgba(215,206,97,1) 0%, rgba(212,169,49,1) 48%, rgba(171,159,22,1) 87%);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#searchin{
+    font-size: 15px;
+    height: 2em;
+    border-radius: 5px;
+}
+.searchbtn:hover{
+    border: 2px solid blue;
+}
